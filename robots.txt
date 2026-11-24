@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fouzanm.github.io/sitemap.xml
