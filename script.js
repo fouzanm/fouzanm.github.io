@@ -124,6 +124,15 @@
       if (el.dataset.count != null) { el.dataset.count = v; if (el.textContent !== '0') el.textContent = v; }
       else el.textContent = v;
     });
+    const box = $('[data-lc-badges]');
+    if (box && Array.isArray(d.badges) && d.badges.length) {
+      box.replaceChildren(...d.badges.map(b => {
+        const img = document.createElement('img');
+        img.src = b.icon; img.alt = b.name; img.title = b.name;
+        img.width = 38; img.height = 38; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer';
+        return img;
+      }));
+    }
     ['easy', 'medium', 'hard'].forEach(k => {
       const bar = $('[data-lc-bar="' + k + '"]');
       if (bar) bar.style.width = (d[k] / d.total * 100).toFixed(1) + '%';

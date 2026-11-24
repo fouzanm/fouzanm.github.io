@@ -4,5 +4,48 @@
   "easy": 109,
   "medium": 215,
   "hard": 29,
-  "updated": "2026-11-24"
+  "badgeCount": 8,
+  "badges": [
+    {
+      "name": "100 Days Badge 2025",
+      "icon": "https://assets.leetcode.com/static_assets/others/lg25100.png",
+      "date": "2025-07-18"
+    },
+    {
+      "name": "50 Days Badge 2025",
+      "icon": "https://assets.leetcode.com/static_assets/others/lg2550.png",
+      "date": "2025-02-21"
+    },
+    {
+      "name": "100 Days Badge 2024",
+      "icon": "https://assets.leetcode.com/static_assets/marketing/2024-100-lg.png",
+      "date": "2024-11-07"
+    },
+    {
+      "name": "50 Days Badge 2024",
+      "icon": "https://assets.leetcode.com/static_assets/marketing/2024-50-lg.png",
+      "date": "2024-08-27"
+    },
+    {
+      "name": "Feb LeetCoding Challenge",
+      "icon": "https://leetcode.com/static/images/badges/dcc-2025-2.png",
+      "date": "2025-02-28"
+    },
+    {
+      "name": "Jan LeetCoding Challenge",
+      "icon": "https://leetcode.com/static/images/badges/dcc-2025-1.png",
+      "date": "2025-01-31"
+    },
+    {
+      "name": "Dec LeetCoding Challenge",
+      "icon": "https://leetcode.com/static/images/badges/dcc-2024-12.png",
+      "date": "2024-12-31"
+    },
+    {
+      "name": "Nov LeetCoding Challenge",
+      "icon": "https://leetcode.com/static/images/badges/dcc-2024-11.png",
+      "date": "2024-11-30"
+    }
+  ],
+  "updated": "2026-11-25"
 }
