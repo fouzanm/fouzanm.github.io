@@ -218,3 +218,17 @@ a.project:hover .ext{color:var(--a2);transform:translate(3px,-3px)}
 @media(max-width:720px){.orb{filter:blur(60px)}.o1,.o2{width:300px;height:300px}}
 .projects.first{margin-top:48px}
 .sub + .lead{margin-top:12px}
+
+/* LEETCODE CARD */
+.stat.lc{grid-column:span 2;color:inherit;display:block}
+.lc-top{display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.lc-ext{font-size:16px;transition:.25s}.stat.lc:hover .lc-ext{color:var(--a2);transform:translate(3px,-3px)}
+.lc-main{display:flex;align-items:baseline;gap:12px}
+.lc-main span{font-size:14px;color:var(--muted)}
+.lc-bar{display:flex;gap:3px;height:8px;margin:14px 0 10px;border-radius:8px;overflow:hidden}
+.lc-bar i{display:block;height:100%}
+.lc-bar .e,.lc-legend .e{background:#34d399}.lc-bar .m,.lc-legend .m{background:#fbbf24}.lc-bar .h,.lc-legend .h{background:#f87171}
+.lc-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:#c9c9d1}
+.lc-legend span{display:inline-flex;align-items:center;gap:7px}
+.lc-legend i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.lc-badge{margin-top:12px;font-size:13px;color:var(--muted)}
