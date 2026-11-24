@@ -1,0 +1,33 @@
+name: Update LeetCode stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # daily, 03:17 UTC
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rewrite the file even if numbers are unchanged"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch stats
+        run: python3 scripts/update_leetcode.py ${{ inputs.force && '--force' || '' }}
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain leetcode.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add leetcode.json
+            git commit -m "chore: update LeetCode stats"
+            git push
+          else
+            echo "No changes to commit"
+          fi

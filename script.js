@@ -113,4 +113,20 @@
     if (!reduce) requestAnimationFrame(draw);
   }
   draw();
+
+  /* LeetCode stats: refreshed daily by a GitHub Action into leetcode.json.
+     If the file can't be loaded, the numbers already in the HTML are shown. */
+  fetch('leetcode.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : Promise.reject()).then(d => {
+    if (!d || !(d.total > 0)) return;
+    $$('[data-lc]').forEach(el => {
+      const v = d[el.dataset.lc];
+      if (v == null) return;
+      if (el.dataset.count != null) { el.dataset.count = v; if (el.textContent !== '0') el.textContent = v; }
+      else el.textContent = v;
+    });
+    ['easy', 'medium', 'hard'].forEach(k => {
+      const bar = $('[data-lc-bar="' + k + '"]');
+      if (bar) bar.style.width = (d[k] / d.total * 100).toFixed(1) + '%';
+    });
+  }).catch(() => {});
 })();
