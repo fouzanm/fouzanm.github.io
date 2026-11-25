@@ -269,3 +269,5 @@ a.project:hover .ext{color:var(--a2);transform:translate(3px,-3px)}
 
 /* Education: core subjects */
 .edu .core-label{margin:16px 0 8px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.projects.personal .project.wide{grid-column:1/-1}
+.projects.personal code{font-family:'JetBrains Mono',monospace;font-size:.92em;padding:1px 6px;border-radius:6px;background:rgba(255,255,255,.07);color:#e4e4ea}
