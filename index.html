@@ -276,19 +276,18 @@
           <span class="case-num">01</span>
           <span class="sector">Retail &amp; POS · Odoo 19</span>
           <h3>POS Day-Close &amp; Inventory Control</h3>
-          <p class="client"><b>The client</b> A multi-branch retailer that produces goods in-house and sells them through its own POS outlets, and needed every branch to reconcile sales, cash, stock and leftovers at the end of each day.</p>
           <div class="tags"><span>Odoo 19</span><span>POS (OWL)</span><span>Inventory</span><span>Spreadsheet dashboards</span><span>Multi-company</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A multi-branch retailer that makes its own products needed every branch to reconcile sales, cash, stock and leftovers at the end of each day.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
-            <li>A day-session workflow on top of POS shifts: a branch opens a business day, runs several cashier sessions, and cannot close the day while any session is still open.</li>
-            <li>One-step day close that posts the session, payment and bank-statement entries and consolidates orders, payments, discounts and net sales into a single day-close record.</li>
-            <li>Inventory closing inside the POS screen: staff enter counted quantities, see the differences, and a confirmed summary creates the stock adjustments automatically.</li>
-            <li>Leftover handling that splits remaining stock into "can be sold" and "to be wasted", with journal entries, stock moves and inter-company transfers through a transit location.</li>
-            <li>Spreadsheet dashboards for hourly sales with peak-hour detection, leftover waste and recovery, and product mix, plus day-close, shift-close and stock register printouts.</li>
-            <li>Controls around the till: stock and payment shortage tracking, bank charges on POS payments, and blocking orders paid below the bill amount.</li>
-          </ul>
+            <li>A business-day workflow on top of POS shifts: a branch opens a day, runs several cashier sessions, and cannot close the day while any session is still open.</li>
+            <li>One-step day close that posts session, payment and bank-statement entries and consolidates orders, discounts and net sales.</li>
+            <li>Stock counting inside the POS screen: staff enter counted quantities, and a confirmed summary creates the stock adjustments automatically.</li>
+            <li>Leftover handling that splits stock into "can be sold" and "to be wasted", with journal entries and inter-company transfers, plus hourly-sales and leftover dashboards.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Each day closes in a controlled sequence: sessions, cash, stock and leftovers are reconciled before the day can be marked closed.</p></div>
         </div>
       </article>
       <article class="case spot reveal">
@@ -296,18 +295,18 @@
           <span class="case-num">02</span>
           <span class="sector">Service · Odoo 18 Enterprise</span>
           <h3>After-Sales Repair &amp; Service Management</h3>
-          <p class="client"><b>The client</b> A multi-company group handling product repairs and warranty service, with approval-heavy sales, purchasing and credit processes.</p>
           <div class="tags"><span>Odoo 18 EE</span><span>Repair</span><span>Quality</span><span>Approvals</span><span>Multi-company</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A multi-company group handling repairs and warranty service needed one controlled flow from service request to repair, with approvals and credit checks built in.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
-            <li>A Service Request lifecycle: warranty auto-identification, validation, preliminary assessment and support routing, then one-click conversion to a repair order.</li>
-            <li>Guided wizards for rescheduling, cancellation, spare-parts consumption, repair quotations and resolution, with scheduled notification jobs.</li>
-            <li>Pre-delivery inspection (PDI) quality control tied to repairs, and serial/lot numbers kept in sync across intercompany receipts.</li>
-            <li>A customer credit application form with a multi-stage approval workflow, and consolidated group customer statements.</li>
-            <li>Dynamic approval rules for sales, proforma, purchase and repair estimates, plus a one-time stock valuation rebuild that corrected old values and journal entries.</li>
-          </ul>
+            <li>A service request lifecycle with warranty auto-identification, assessment and routing, then one-click conversion to a repair order.</li>
+            <li>Guided wizards for rescheduling, spare-parts consumption, quotations and resolution, with scheduled notifications.</li>
+            <li>Quality inspection on repairs, a credit application form with multi-stage approval, and configurable approval rules for sales, purchases and repair estimates.</li>
+            <li>Consolidated group customer statements and intercompany serial/lot sync, plus a one-time stock valuation rebuild that corrected historical values and journal entries.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">A repair now moves from request to invoice in one traceable flow, with warranty status, approvals and credit decisions recorded at each step.</p></div>
         </div>
       </article>
       <article class="case spot reveal">
@@ -315,18 +314,18 @@
           <span class="case-num">03</span>
           <span class="sector">Trading · Odoo 19 Enterprise</span>
           <h3>Approval-Driven ERP for Distribution</h3>
-          <p class="client"><b>The client</b> A distribution business selling B2B and online through the Salla storefront, needing tight control over stock, cash and credit.</p>
           <div class="tags"><span>Odoo 19 EE</span><span>Salla API</span><span>ZATCA</span><span>Approvals</span><span>QWeb</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A distribution business selling B2B and online through the Salla storefront needed tight control over stock, cash and credit.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
-            <li>A reusable multi-level approval engine applied to purchase requests, inventory adjustments, internal transfers, delivery and receipt returns, and payments, with approver signatures printed on documents.</li>
-            <li>Customer-type credit control (cash, credit, related company) with credit-limit approval at sale order confirmation.</li>
-            <li>Petty cash management with a low-balance alert, stock location freeze, and a leave and attendance lock date.</li>
-            <li>A two-way Salla connector: orders, customers and returns into Odoo, products out to the store, plus a transport handover acknowledgement report.</li>
-            <li>Bilingual Arabic/English tax invoices, GRNs, delivery notes and vouchers aligned with ZATCA e-invoicing.</li>
-          </ul>
+            <li>A reusable multi-level approval engine for purchase requests, inventory adjustments, internal transfers, returns and payments, with approver signatures printed on documents.</li>
+            <li>Credit control by customer type with credit-limit approval at order confirmation, plus petty cash with low-balance alerts and stock location freeze.</li>
+            <li>A two-way Salla connector: orders, customers and returns into Odoo, products out to the store.</li>
+            <li>Bilingual Arabic/English tax invoices, GRNs and vouchers aligned with ZATCA e-invoicing.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Sensitive actions such as returns, stock adjustments, payments and credit sales now need the right approver, and store orders arrive in Odoo without re-keying.</p></div>
         </div>
       </article>
       <article class="case spot reveal">
@@ -334,18 +333,18 @@
           <span class="case-num">04</span>
           <span class="sector">Trading &amp; Logistics · Odoo 17</span>
           <h3>Trading Controls, Landed Cost &amp; Fleet Maintenance</h3>
-          <p class="client"><b>The client</b> A trading and distribution company with a vehicle fleet, tight margins and imports whose costs had to be allocated accurately.</p>
           <div class="tags"><span>Odoo 17</span><span>Landed cost</span><span>Fleet</span><span>Maintenance</span><span>Credit control</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A trading company with a vehicle fleet and imported goods needed to protect its margins and allocate landed costs accurately.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
             <li>Automatic customer freeze driven by overdue invoices, so credit rules are enforced without manual follow-up.</li>
-            <li>Delivery blocked when the selling price is below item cost, and restrictions on picking returns and internal transfer validation by user group.</li>
-            <li>Partial landed cost allocation and landed cost bill adjustment, so imported-goods costs flow correctly into stock valuation.</li>
-            <li>Maintenance linked to accounting assets with cost tracking, stage approvals, material requests and maintenance order costing for the fleet.</li>
-            <li>CBM calculation, product attribute bulk updates, and aged payable/receivable reports extended with payment terms.</li>
-          </ul>
+            <li>Delivery blocked when the selling price is below item cost, with return and transfer restrictions by user group.</li>
+            <li>Partial landed cost allocation and bill adjustment, so import costs reach stock valuation correctly.</li>
+            <li>Maintenance linked to accounting assets, with cost tracking, stage approvals, material requests and maintenance order costing for the fleet.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Credit and pricing rules are enforced by the system instead of by follow-up, and import and maintenance costs flow into the accounts.</p></div>
         </div>
       </article>
       <article class="case spot reveal">
@@ -353,17 +352,18 @@
           <span class="case-num">05</span>
           <span class="sector">Services · Odoo 19</span>
           <h3>Project-Based ERP with HR Self-Service</h3>
-          <p class="client"><b>The client</b> A Saudi project-driven company that needed cost control per project, structured approvals and a self-service portal for staff.</p>
           <div class="tags"><span>Odoo 19</span><span>Portal</span><span>HR &amp; Payroll</span><span>KSA localization</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A project-driven company needed cost control per project, structured approvals and a self-service portal for its staff.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
             <li>An estimation workflow that turns a cost and margin estimate into multiple sales quotations, and a material-issue flow that books stock as a project expense.</li>
-            <li>Finance extensions: deferred entries with a deferral account per expense, payment receipt vouchers, bank charges tax and continuous journal numbering.</li>
-            <li>An employee portal for attendance check-in and check-out with device and GPS tracking, leave requisitions and HR policy acknowledgements.</li>
-            <li>Multi-level approval for payments and HR policies, Saudi payroll extensions and bilingual printouts.</li>
-          </ul>
+            <li>Finance extensions: deferred entries with a deferral account per expense, payment receipt vouchers, bank-charge tax and continuous journal numbering.</li>
+            <li>An employee portal for attendance check-in and check-out with device and GPS tracking, leave requisitions and HR policies.</li>
+            <li>Multi-level approval for payments and HR policies, plus Saudi payroll extensions and bilingual printouts.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Project costs are tracked from estimate to expense, and staff handle their own attendance and leave through the portal.</p></div>
         </div>
       </article>
       <article class="case spot reveal">
@@ -371,17 +371,18 @@
           <span class="case-num">06</span>
           <span class="sector">Education · Odoo 16 · Personal project</span>
           <h3>College ERP</h3>
-          <p class="client"><b>The client</b> A college that needed admissions, academics and examinations in one system instead of spreadsheets and paper forms.</p>
           <div class="tags"><span>Odoo 16</span><span>Website</span><span>Wizards</span><span>Cron jobs</span></div>
         </div>
         <div class="case-main">
-          <p class="built-h">What I built</p>
+          <div class="blk"><p class="built-h">The need</p><p class="need">Built to cover a college's admissions, academics and examinations in one system instead of separate spreadsheets and paper forms.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
           <ul>
-            <li>Online admission form on the website with automatic admission numbers and email notifications; confirm or reject applications, and confirmed ones create students and their class.</li>
+            <li>An online admission form on the website with automatic admission numbers and email notifications; confirmed applications create students and their class.</li>
             <li>Academic structure: academic years, courses, semesters, syllabus, classes and exam papers.</li>
-            <li>Exam management with internal and other exam types, date validation, and a scheduled job that updates exam status.</li>
-            <li>Marksheet generation per exam through a wizard, student promotion between semesters, and a public admitted-students list.</li>
-          </ul>
+            <li>Exam management with date validation and a scheduled job that updates exam status, plus marksheet generation through a wizard.</li>
+            <li>Student promotion between semesters and a public admitted-students list.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">An applicant can go from the website form to an enrolled student with marksheets inside a single system.</p></div>
         </div>
       </article>
     </div>
