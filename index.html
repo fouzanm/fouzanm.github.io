@@ -279,7 +279,7 @@
           <div class="tags"><span>Odoo 19</span><span>14 outlets</span><span>POS (OWL)</span><span>Inventory</span><span>Spreadsheet dashboards</span></div>
         </div>
         <div class="case-main">
-          <div class="blk"><p class="built-h">The need</p><p class="need">A retailer with 14 outlets that makes its own products needed every outlet to reconcile sales, cash, stock and leftovers at the end of each day.</p></div>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A Bahrain-based retailer with 14 outlets that makes its own products needed every outlet to reconcile sales, cash, stock and leftovers at the end of each day.</p></div>
           <div class="blk"><p class="built-h">What I built</p>
           <ul>
             <li>A business-day workflow on top of POS shifts: a branch opens a day, runs several cashier sessions, and cannot close the day while any session is still open.</li>
@@ -293,6 +293,44 @@
       <article class="case spot reveal">
         <div class="case-side">
           <span class="case-num">02</span>
+          <span class="sector">Finance · Odoo 18</span>
+          <h3>Xero Integration for a New Zealand Client</h3>
+          <div class="tags"><span>Odoo 18</span><span>Xero API</span><span>OAuth 2.0</span><span>Webhooks</span><span>New Zealand</span></div>
+        </div>
+        <div class="case-main">
+          <div class="blk"><p class="built-h">The need</p><p class="need">A New Zealand company running Odoo 18 needed its invoices, payments and taxes to stay in step with Xero instead of being re-entered by hand.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
+          <ul>
+            <li>Adapted a commercial Xero connector (OAuth 2.0, REST API) to the client's Odoo 18 setup and extended it for their workflow.</li>
+            <li>Fixed the invoice export to Xero for invoices with multiple lines.</li>
+            <li>Added a payment webhook so payment updates sync automatically, and updated the tax views on sales orders and invoices.</li>
+            <li>Delivered the client's other Odoo 18 customizations alongside it: analytic accounts, helpdesk, sales extensions, custom sales reports and a custom backend theme.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Invoices, payments and tax details move between Odoo and Xero without manual re-entry, and each sync is logged so problems can be traced.</p></div>
+        </div>
+      </article>
+      <article class="case spot reveal">
+        <div class="case-side">
+          <span class="case-num">03</span>
+          <span class="sector">Sales automation · Odoo 18</span>
+          <h3>Sale Orders from PDF Documents</h3>
+          <div class="tags"><span>Odoo 18</span><span>Python</span><span>pdfplumber</span><span>Wizards</span><span>Configurable mapping</span></div>
+        </div>
+        <div class="case-main">
+          <div class="blk"><p class="built-h">The need</p><p class="need">A client that received customer orders as PDF files wanted sale orders created from them without re-typing every line.</p></div>
+          <div class="blk"><p class="built-h">What I built</p>
+          <ul>
+            <li>Create sale orders directly from PDF attachments on project tasks, reading the PDF text with pdfplumber.</li>
+            <li>A configurable keyword-to-field mapping, so each customer's PDF layout can be matched to sale order fields and order lines without writing code.</li>
+            <li>Options to create missing customers and products automatically, with default customer, default product and date-format settings.</li>
+            <li>A guided wizard, a digitization menu and a smart button on each task that lists the sale orders created from it, plus a Dutch translation.</li>
+          </ul></div>
+          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Orders that arrive as PDFs turn into sale orders from the project task, and new PDF layouts are handled through configuration instead of new code.</p></div>
+        </div>
+      </article>
+      <article class="case spot reveal">
+        <div class="case-side">
+          <span class="case-num">04</span>
           <span class="sector">Service · Odoo 18 Enterprise</span>
           <h3>After-Sales Repair &amp; Service Management</h3>
           <div class="tags"><span>Odoo 18 EE</span><span>Repair</span><span>Quality</span><span>Approvals</span><span>Multi-company</span></div>
@@ -311,7 +349,7 @@
       </article>
       <article class="case spot reveal">
         <div class="case-side">
-          <span class="case-num">03</span>
+          <span class="case-num">05</span>
           <span class="sector">Trading · Odoo 19 Enterprise</span>
           <h3>Approval-Driven ERP for Distribution</h3>
           <div class="tags"><span>Odoo 19 EE</span><span>Salla API</span><span>ZATCA</span><span>Approvals</span><span>QWeb</span></div>
@@ -330,7 +368,7 @@
       </article>
       <article class="case spot reveal">
         <div class="case-side">
-          <span class="case-num">04</span>
+          <span class="case-num">06</span>
           <span class="sector">Trading &amp; Logistics · Odoo 17</span>
           <h3>Trading Controls, Landed Cost &amp; Fleet Maintenance</h3>
           <div class="tags"><span>Odoo 17</span><span>Landed cost</span><span>Fleet</span><span>Maintenance</span><span>Credit control</span></div>
@@ -349,7 +387,7 @@
       </article>
       <article class="case spot reveal">
         <div class="case-side">
-          <span class="case-num">05</span>
+          <span class="case-num">07</span>
           <span class="sector">Services · Odoo 19</span>
           <h3>Project-Based ERP with HR Self-Service</h3>
           <div class="tags"><span>Odoo 19</span><span>Portal</span><span>HR &amp; Payroll</span><span>KSA localization</span></div>
@@ -368,7 +406,7 @@
       </article>
     </div>
 
-    <h3 class="sub reveal">Personal &amp; <span class="grad">open-source</span></h3>
+    <h3 class="sub reveal">Personal <span class="grad">projects</span></h3>
     <p class="lead reveal">Projects I built on my own to learn, teach and ship.</p>
     <div class="projects personal">
       <article class="project spot reveal">
@@ -376,7 +414,7 @@
         <h3>Study Desk</h3>
         <p>A free study platform for people preparing for tech roles. Learners pick a path (Forward Deployed, AI, Software or Data Engineer) or single courses, then follow one short lesson a day with quizzes, flashcards, a progress dashboard and streaks.</p>
         <p>Plain HTML, CSS and JavaScript with no build step. Supabase handles email and Google sign-in, row-level security so each user sees only their own data, and an admin panel for sign-ups and activity.</p>
-        <div class="tags"><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span><span>Auth &amp; RLS</span><span>MIT license</span></div>
+        <div class="tags"><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span><span>Auth &amp; RLS</span></div>
         <div class="proj-links"><a href="https://studydesk-fouzan.netlify.app" target="_blank" rel="noopener">Live site ↗</a><a href="https://github.com/fouzanm/study-desk" target="_blank" rel="noopener">Source code ↗</a></div>
       </article>
       <article class="project spot reveal">
@@ -399,6 +437,8 @@
         <p class="eyebrow">Education</p>
         <h3>Bachelor of Science in Mathematics</h3>
         <p class="org">University of Calicut</p>
+        <p class="core-label">Core subjects</p>
+        <div class="tags"><span>Mathematics</span><span>Statistics</span><span>Computer Science</span></div>
       </div>
       <span class="date">Dec 2020 – Nov 2024</span>
     </div>

@@ -266,3 +266,6 @@ a.project:hover .ext{color:var(--a2);transform:translate(3px,-3px)}
 .proj-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
 .proj-links a{font-size:13.5px;padding:8px 16px;border:1px solid var(--line);border-radius:100px;color:#e4e4ea;transition:.2s}
 .proj-links a:hover{border-color:var(--a2);color:#fff;transform:translateY(-2px)}
+
+/* Education: core subjects */
+.edu .core-label{margin:16px 0 8px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
