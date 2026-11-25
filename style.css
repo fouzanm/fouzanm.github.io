@@ -259,3 +259,10 @@ a.project:hover .ext{color:var(--a2);transform:translate(3px,-3px)}
 .case-main .built-h{margin-bottom:10px}
 .case-main .need{color:#c9c9d1;font-size:15px}
 .case-main .outcome{padding:14px 18px;border-left:2px solid var(--a2);background:rgba(34,211,238,.06);border-radius:0 12px 12px 0;color:#e8e8ee;font-size:15px}
+
+/* Personal projects */
+.projects.personal{margin-top:24px}
+.projects.personal .project p{flex:none}
+.proj-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.proj-links a{font-size:13.5px;padding:8px 16px;border:1px solid var(--line);border-radius:100px;color:#e4e4ea;transition:.2s}
+.proj-links a:hover{border-color:var(--a2);color:#fff;transform:translateY(-2px)}

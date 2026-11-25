@@ -276,10 +276,10 @@
           <span class="case-num">01</span>
           <span class="sector">Retail &amp; POS · Odoo 19</span>
           <h3>POS Day-Close &amp; Inventory Control</h3>
-          <div class="tags"><span>Odoo 19</span><span>POS (OWL)</span><span>Inventory</span><span>Spreadsheet dashboards</span><span>Multi-company</span></div>
+          <div class="tags"><span>Odoo 19</span><span>14 outlets</span><span>POS (OWL)</span><span>Inventory</span><span>Spreadsheet dashboards</span></div>
         </div>
         <div class="case-main">
-          <div class="blk"><p class="built-h">The need</p><p class="need">A multi-branch retailer that makes its own products needed every branch to reconcile sales, cash, stock and leftovers at the end of each day.</p></div>
+          <div class="blk"><p class="built-h">The need</p><p class="need">A retailer with 14 outlets that makes its own products needed every outlet to reconcile sales, cash, stock and leftovers at the end of each day.</p></div>
           <div class="blk"><p class="built-h">What I built</p>
           <ul>
             <li>A business-day workflow on top of POS shifts: a branch opens a day, runs several cashier sessions, and cannot close the day while any session is still open.</li>
@@ -366,27 +366,28 @@
           <div class="blk"><p class="built-h">Outcome</p><p class="outcome">Project costs are tracked from estimate to expense, and staff handle their own attendance and leave through the portal.</p></div>
         </div>
       </article>
-      <article class="case spot reveal">
-        <div class="case-side">
-          <span class="case-num">06</span>
-          <span class="sector">Education · Odoo 16 · Personal project</span>
-          <h3>College ERP</h3>
-          <div class="tags"><span>Odoo 16</span><span>Website</span><span>Wizards</span><span>Cron jobs</span></div>
-        </div>
-        <div class="case-main">
-          <div class="blk"><p class="built-h">The need</p><p class="need">Built to cover a college's admissions, academics and examinations in one system instead of separate spreadsheets and paper forms.</p></div>
-          <div class="blk"><p class="built-h">What I built</p>
-          <ul>
-            <li>An online admission form on the website with automatic admission numbers and email notifications; confirmed applications create students and their class.</li>
-            <li>Academic structure: academic years, courses, semesters, syllabus, classes and exam papers.</li>
-            <li>Exam management with date validation and a scheduled job that updates exam status, plus marksheet generation through a wizard.</li>
-            <li>Student promotion between semesters and a public admitted-students list.</li>
-          </ul></div>
-          <div class="blk"><p class="built-h">Outcome</p><p class="outcome">An applicant can go from the website form to an enrolled student with marksheets inside a single system.</p></div>
-        </div>
-      </article>
     </div>
 
+    <h3 class="sub reveal">Personal &amp; <span class="grad">open-source</span></h3>
+    <p class="lead reveal">Projects I built on my own to learn, teach and ship.</p>
+    <div class="projects personal">
+      <article class="project spot reveal">
+        <div class="p-icon">◎</div>
+        <h3>Study Desk</h3>
+        <p>A free study platform for people preparing for tech roles. Learners pick a path (Forward Deployed, AI, Software or Data Engineer) or single courses, then follow one short lesson a day with quizzes, flashcards, a progress dashboard and streaks.</p>
+        <p>Plain HTML, CSS and JavaScript with no build step. Supabase handles email and Google sign-in, row-level security so each user sees only their own data, and an admin panel for sign-ups and activity.</p>
+        <div class="tags"><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span><span>Auth &amp; RLS</span><span>MIT license</span></div>
+        <div class="proj-links"><a href="https://studydesk-fouzan.netlify.app" target="_blank" rel="noopener">Live site ↗</a><a href="https://github.com/fouzanm/study-desk" target="_blank" rel="noopener">Source code ↗</a></div>
+      </article>
+      <article class="project spot reveal">
+        <div class="p-icon">✎</div>
+        <h3>College ERP</h3>
+        <p>An Odoo 16 module that covers a college's admissions, academics and examinations in one system: an online admission form on the website, automatic admission numbers and emails, and confirmed applications that create students and their class.</p>
+        <p>It also handles academic years, courses, semesters and syllabus, exams with a scheduled status job, marksheets through a wizard, and student promotion between semesters.</p>
+        <div class="tags"><span>Odoo 16</span><span>Python</span><span>Website</span><span>Wizards</span><span>Cron jobs</span></div>
+        <div class="proj-links"><a href="https://github.com/fouzanm/College-ERP" target="_blank" rel="noopener">Source code ↗</a></div>
+      </article>
+    </div>
   </div>
 </section>
 
