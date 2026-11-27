@@ -65,7 +65,7 @@
   document.addEventListener('pointerleave', () => { fx.style.setProperty('--cx', '-999px'); fx.style.setProperty('--cy', '-999px'); });
 
   /* Typing effect */
-  const words = ['enterprise apps with Python', 'REST APIs & integrations', 'React & OWL interfaces', 'Odoo ERP solutions', 'automations with n8n'];
+  const words = ['Python backend systems', 'REST APIs & integrations', 'client-facing solutions', 'React & OWL interfaces', 'automations with n8n'];
   const typed = $('#typed');
   if (reduce) typed.textContent = words[0];
   else {
