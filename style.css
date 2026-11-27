@@ -271,3 +271,37 @@ a.project:hover .ext{color:var(--a2);transform:translate(3px,-3px)}
 .edu .core-label{margin:16px 0 8px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .projects.personal .project.wide{grid-column:1/-1}
 .projects.personal code{font-family:'JetBrains Mono',monospace;font-size:.92em;padding:1px 6px;border-radius:6px;background:rgba(255,255,255,.07);color:#e4e4ea}
+
+/* LeetCode card sits at the top of its column */
+.about-left .stat.lc{align-self:start}
+
+/* HERO lead: full text on desktop, short on phones */
+.lead .short{display:none}
+
+/* MOBILE POLISH */
+@media(max-width:720px){
+  .container{width:calc(100% - 44px)}
+  .hero{min-height:100svh;padding:104px 0 56px}
+  .badge{font-size:12px;margin-bottom:20px}
+  h1{font-size:clamp(32px,10.4vw,48px);white-space:nowrap}
+  .role{font-size:19px;margin-top:14px}
+  .lead .full{display:none}.lead .short{display:inline}
+  .lead{font-size:16.5px;margin-top:16px}
+  .cta{margin-top:26px;gap:10px}
+  .hero .cta .btn{flex:1 1 0;justify-content:center;text-align:center;padding-left:14px;padding-right:14px}
+  .socials{margin-top:22px;gap:8px}
+  .scroll-hint{display:none}
+  .section{padding:64px 0}
+  .about-text p{font-size:16px}
+  .about-grid{margin-top:32px;gap:28px}
+  .stat{padding:20px}.stat b{font-size:36px}
+  .card,.project,.tl-card{padding:22px}
+  .case{padding:22px;gap:16px}
+  .case-side h3{font-size:21px}
+  .edu{padding:24px}
+  .contact{padding:56px 22px}
+  .contact h2{font-size:clamp(30px,9vw,40px)}
+  .cta.center .btn{width:100%;justify-content:center}
+  .sub{margin-top:64px}
+  .footer .container{flex-direction:column;align-items:flex-start}
+}
